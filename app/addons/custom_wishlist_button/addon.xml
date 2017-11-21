@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon scheme="2.0">
+    <id>custom_wishlist_button</id>
+    <version>1.0</version>
+    <name>Custom Wishlist Button</name>
+    <description>Nothing</description>
+    <priority>100500</priority>
+</addon>

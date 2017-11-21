@@ -1,0 +1,2 @@
+<button title="{$alt}" class="ty-search-magnifier" type="submit"><img src="design/themes/pixel_theme/media/images/Pixel/search_arrow.jpg"/></i></button>
+<input type="hidden" name="dispatch" value="{$but_name}" />

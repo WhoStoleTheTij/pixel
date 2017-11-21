@@ -76,7 +76,7 @@ $config['https_path'] = '';
  */
 // Names of index files for the frontend and backend
 $config['customer_index'] = 'index.php';
-$config['admin_index']    = 'admin.php';
+$config['admin_index']    = 'pixel_admin.php';
 
 
 // DEMO mode
