@@ -1,0 +1,13 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Arabic\n"
+"Language: ar_SA\n"
+
+msgctxt "Addons::name::storefront_rest_api"
+msgid "Storefront REST API"
+msgstr "Storefront REST API"
+
+msgctxt "Addons::description::storefront_rest_api"
+msgid "Provides REST API entities"
+msgstr "Provides REST API entities"
