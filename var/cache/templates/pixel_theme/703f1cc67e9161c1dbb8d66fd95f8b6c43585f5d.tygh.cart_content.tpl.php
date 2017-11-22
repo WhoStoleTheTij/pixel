@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2017-11-21 15:14:00
+<?php /* Smarty version Smarty-3.1.21, created on 2017-11-22 11:34:24
          compiled from "/Users/richardh/Sites/pixel/design/themes/pixel_theme/templates/blocks/cart_content.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:4290775385a1414017c95d3-24563351%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '703f1cc67e9161c1dbb8d66fd95f8b6c43585f5d' => 
     array (
       0 => '/Users/richardh/Sites/pixel/design/themes/pixel_theme/templates/blocks/cart_content.tpl',
-      1 => 1511265752,
+      1 => 1511339663,
       2 => 'tygh',
     ),
   ),
@@ -36,7 +36,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5a1414019bd050_62766088')) {function content_5a1414019bd050_62766088($_smarty_tpl) {?><?php if (!is_callable('smarty_block_hook')) include '/Users/richardh/Sites/pixel/app/functions/smarty_plugins/block.hook.php';
 if (!is_callable('smarty_function_set_id')) include '/Users/richardh/Sites/pixel/app/functions/smarty_plugins/function.set_id.php';
 ?><?php
-fn_preload_lang_vars(array('my_cart','items','for','cart_is_empty','cart_is_empty','view_cart','checkout','my_cart','items','for','cart_is_empty','cart_is_empty','view_cart','checkout'));
+fn_preload_lang_vars(array('Items','for','cart_is_empty','view_cart','checkout','Items','for','cart_is_empty','view_cart','checkout'));
 ?>
 <?php if ($_smarty_tpl->tpl_vars['runtime']->value['customization_mode']['design']=="Y"&&@constant('AREA')=="C") {
 $_smarty_tpl->_capture_stack[0][] = array("template_content", null, null); ob_start();
@@ -52,20 +52,18 @@ $_smarty_tpl->tpl_vars["dropdown_id"] = new Smarty_variable($_smarty_tpl->tpl_va
 ">
             <?php $_smarty_tpl->smarty->_tag_stack[] = array('hook', array('name'=>"checkout:dropdown_title")); $_block_repeat=true; echo smarty_block_hook(array('name'=>"checkout:dropdown_title"), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
 
-            <i class="ty-minicart__icon ty-icon-moon-commerce<?php if ($_SESSION['cart']['amount']) {?> filled<?php } else { ?> empty<?php }?>"></i>
+
             <span class="ty-minicart-title<?php if (!$_SESSION['cart']['amount']) {?> empty-cart<?php }?> ty-hand">
-                <span class="ty-block ty-minicart-title__header ty-uppercase"><?php echo $_smarty_tpl->__("my_cart");?>
-</span>
+                <span class="ty-block ty-minicart-title__header ty-uppercase"><img src="design/themes/pixel_theme/media/images/Pixel/basket.png"/></span>
                 <span class="ty-block">
                 <?php if ($_SESSION['cart']['amount']) {?>
                     <?php echo htmlspecialchars($_SESSION['cart']['amount'], ENT_QUOTES, 'UTF-8');?>
-&nbsp;<?php echo $_smarty_tpl->__("items");?>
+&nbsp;<?php echo $_smarty_tpl->__("Items");?>
  <?php echo $_smarty_tpl->__("for");?>
 &nbsp;<?php echo $_smarty_tpl->getSubTemplate ("common/price.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('value'=>$_SESSION['cart']['display_subtotal']), 0);?>
 
                 <?php } else { ?>
-                    <?php echo $_smarty_tpl->__("cart_is_empty");?>
-
+                    Items (0)
                 <?php }?>
                 </span>
             </span>
@@ -188,20 +186,18 @@ $_smarty_tpl->tpl_vars["dropdown_id"] = new Smarty_variable($_smarty_tpl->tpl_va
 ">
             <?php $_smarty_tpl->smarty->_tag_stack[] = array('hook', array('name'=>"checkout:dropdown_title")); $_block_repeat=true; echo smarty_block_hook(array('name'=>"checkout:dropdown_title"), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
 
-            <i class="ty-minicart__icon ty-icon-moon-commerce<?php if ($_SESSION['cart']['amount']) {?> filled<?php } else { ?> empty<?php }?>"></i>
+
             <span class="ty-minicart-title<?php if (!$_SESSION['cart']['amount']) {?> empty-cart<?php }?> ty-hand">
-                <span class="ty-block ty-minicart-title__header ty-uppercase"><?php echo $_smarty_tpl->__("my_cart");?>
-</span>
+                <span class="ty-block ty-minicart-title__header ty-uppercase"><img src="design/themes/pixel_theme/media/images/Pixel/basket.png"/></span>
                 <span class="ty-block">
                 <?php if ($_SESSION['cart']['amount']) {?>
                     <?php echo htmlspecialchars($_SESSION['cart']['amount'], ENT_QUOTES, 'UTF-8');?>
-&nbsp;<?php echo $_smarty_tpl->__("items");?>
+&nbsp;<?php echo $_smarty_tpl->__("Items");?>
  <?php echo $_smarty_tpl->__("for");?>
 &nbsp;<?php echo $_smarty_tpl->getSubTemplate ("common/price.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('value'=>$_SESSION['cart']['display_subtotal']), 0);?>
 
                 <?php } else { ?>
-                    <?php echo $_smarty_tpl->__("cart_is_empty");?>
-
+                    Items (0)
                 <?php }?>
                 </span>
             </span>

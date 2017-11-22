@@ -2499,10 +2499,12 @@ Banners
 
           &:nth-child(3){
 
+
             .row-fluid{
               height:45px;
 
               .span8{
+                width:auto;
 
                 &:nth-child(2){
                   width:auto;
@@ -2513,6 +2515,44 @@ Banners
                   height:42px;
                   margin:2px 0;
                   float:right;
+                }
+
+                .ty-dropdown-box{
+                  width:auto;
+                  height:100%;
+
+                  .ty-dropdown-box__title{
+                    padding-top:0;
+                    padding-bottom:0;
+
+                    a {
+                      width:100%;
+                      height:100%;
+
+                      .ty-minicart-title{
+                        width:100%;
+                        height:100%;
+
+
+                        .ty-block{
+                          float:left;
+                          font-size:13px;
+                          color:white;
+                          margin-top:5px;
+                        }
+
+                        .ty-minicart-title__header{
+                          float:left;
+                          margin-top:0;
+                        }
+
+
+                      }
+
+                    }
+
+                  }
+
                 }
 
               }
@@ -2611,6 +2651,247 @@ Banners
       }
     }
 
+
+  }
+
+}
+
+
+// ========= MAIN CONTENT HOMEPAGE
+
+.tygh-content{
+  &:before{
+    display:none;
+  }
+
+  .container-fluid{
+    max-width:none;
+    padding:0;
+
+    .row-fluid{
+
+      &:nth-child(1){
+        max-width:none;
+        width:100%;
+        height:auto;
+
+        .span16{
+          margin-top:-2px;
+        }
+
+      }
+
+      &:nth-child(2){
+        max-width:1366px;
+        width:100%;
+        height:auto;
+        margin: 0 auto;
+      }
+
+      &:nth-child(3){
+        max-width:1366px;
+        width:100%;
+        height:auto;
+        margin: 0 auto;
+      }
+
+      &:nth-child(4){
+        max-width:1366px;
+        width:100%;
+        height:auto;
+        margin: 0 auto;
+      }
+
+    }
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// ======= FOOTER
+
+#tygh_footer{
+
+
+  .ty-footer-grid{
+    background: none;
+    height:210px;
+
+    .row-fluid{
+
+      &:nth-child(1){
+        height:210px;
+
+        background: #ffed50;
+
+        .span12{
+          padding-top:84px;
+          height:46px;
+          margin: 0 auto;
+          text-align: center;
+          max-width: 1366px;
+          clear: both;
+          float: none;
+
+
+          .row-fluid{
+            margin-top:0;
+            height:auto;
+
+            .span5{
+
+              .ty-wysiwyg-content{
+
+                .pixel-help-links-wrapper{
+                  width:auto;
+                  height:100%;
+                  float:right;
+
+                  .pixel-help-links-image{
+                    width:68px;
+                    height:43px;
+                    float:left;
+                  }
+
+                  .pixel-help-links-content{
+                    width:calc(~"100% - 68px");
+                    height:100%;
+                    float:left;
+                    text-align:left;
+
+
+                    .pixel-help-links-text{
+                      width:100%;
+                      height:50%;
+                      font-size:16px;
+                    }
+
+                    .pixel-help-links-info{
+                      width:100%;
+                      height:50%;
+                      font-size:16px;
+                    }
+
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+        }
+      }
+
+      &:nth-child(2){
+        height:285px;
+        background: #e6e7e9;
+
+        .span12 {
+        padding-top: 47px;
+        height: 214px;
+        margin: 0 auto;
+        text-align: left;
+        max-width: 1366px;
+        clear: both;
+        float: none;
+
+          .row-fluid{
+            background:none;
+            height:auto;
+
+            .span4{
+
+              .ty-wysiwyg-content{
+
+                .pixel-footer-item-wrapper{
+                  width:80%;
+                  height:100%;
+                  padding:0 10%;
+                  text-align:left;
+
+                  .pixel-footer-item-title{
+                    width:100%;
+                    height:auto;
+                    font-size:16px;
+                    font-weight:bold;
+                    margin-bottom:20px;
+
+
+
+                  }
+
+                  .pixel-footer-item-content{
+                    width:100%;
+                    height:auto;
+
+                    .pixel-footer-item-row{
+                      margin-bottom:15px;
+                      font-size:13px;
+
+                      a{
+                        color:black;
+                      }
+
+                    }
+
+                  }
+
+                }
+
+              }
+
+              &:nth-child(4){
+                float:right;
+
+                .ty-wysiwyg-content{
+
+                  .pixel-footer-item-wrapper{
+
+                    .pixel-footer-item-title{
+                      text-align:right;
+                      margin-top:-3px;
+
+                      img{
+                        margin-left:15px;
+                      }
+
+
+                    }
+
+
+
+                  }
+
+                }
+
+              }
+
+            }
+
+
+          }
+
+      }
+
+
+      }
+
+
+
+    }
 
   }
 

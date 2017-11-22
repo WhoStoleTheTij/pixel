@@ -5,14 +5,14 @@
         <div id="sw_dropdown_{$dropdown_id}" class="ty-dropdown-box__title cm-combination test">
         <a href="{"checkout.cart"|fn_url}">
             {hook name="checkout:dropdown_title"}
-            <i class="ty-minicart__icon ty-icon-moon-commerce{if $smarty.session.cart.amount} filled{else} empty{/if}"></i>
+
             <span class="ty-minicart-title{if !$smarty.session.cart.amount} empty-cart{/if} ty-hand">
-                <span class="ty-block ty-minicart-title__header ty-uppercase">{__("my_cart")}</span>
+                <span class="ty-block ty-minicart-title__header ty-uppercase"><img src="design/themes/pixel_theme/media/images/Pixel/basket.png"/></span>
                 <span class="ty-block">
                 {if $smarty.session.cart.amount}
-                    {$smarty.session.cart.amount}&nbsp;{__("items")} {__("for")}&nbsp;{include file="common/price.tpl" value=$smarty.session.cart.display_subtotal}
+                    {$smarty.session.cart.amount}&nbsp;{__("Items")} {__("for")}&nbsp;{include file="common/price.tpl" value=$smarty.session.cart.display_subtotal}
                 {else}
-                    {__("cart_is_empty")}
+                    Items (0)
                 {/if}
                 </span>
             </span>
