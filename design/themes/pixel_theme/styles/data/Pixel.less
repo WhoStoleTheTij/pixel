@@ -2659,6 +2659,15 @@ Banners
 
 // ========= MAIN CONTENT HOMEPAGE
 
+@font-face{
+  font-family: 'icomoon';
+  src: url(design/themes/pixel_theme/media/fonts/icomoon.ttf);
+}
+
+body{
+  font-family: 'icomoon' !important;
+}
+
 .tygh-content{
   &:before{
     display:none;
@@ -2677,15 +2686,166 @@ Banners
 
         .span16{
           margin-top:-2px;
+
+          .ty-wysiwyg-content{
+
+            .pixel-slider-banner-wrapper{
+              width:100%;
+              height:auto;
+
+              .pixel-slider-banner-item{
+                width:100%;
+                height:auto;
+
+                img{
+                  width:100%;
+                  height:auto;
+                  max-width:100%;
+                }
+
+              }
+
+            }
+
+          }
+
         }
 
       }
 
       &:nth-child(2){
-        max-width:1366px;
+        max-width:none;
         width:100%;
         height:auto;
         margin: 0 auto;
+
+        .ty-wysiwyg-content{
+
+          .pixel-promotion-banner-wrapper{
+            width:100%;
+            height:710px;
+            position:relative;
+            margin-bottom:110px;
+
+            .pixel-promotion-banner-background{
+              width:100%;
+              height:100%;
+              position:absolute;
+              top:0;
+              left:0;
+
+
+              img{
+                width:100%;
+                height:100%;
+              }
+            }
+
+            .pixel-promotion-banner-content{
+              width:1366px;
+              height:480px;
+              position:absolute;
+              @width: calc(~"100% - 1366px");
+              left:calc(~"@{width} / 2 ");
+              top:147px;
+
+              .pixel-promotion-item-one-wrapper{
+                width:49%;
+                height:100%;
+                margin-right:1%;
+                float:left;
+
+                .pixel-promotion-item-one-image{
+                  width:664px;
+                  height:397px;
+
+                  img{
+                    width:100%;
+                    height:100%;
+                  }
+
+                }
+
+                .pixel-promotion-item-one-text{
+                  width:100%;
+                  height:100px;
+
+                  .pixel-promotion-item-one-title{
+                    width:100%;
+                    height:33px;
+                    font-size:16px;
+                    text-align:center;
+                    font-weight:bold;
+                    padding-top:37px;
+                  }
+
+                  .pixel-promotion-item-one-link{
+                    width:100%;
+                    height:auto;
+                    text-align:center;
+
+                    a{
+                      font-weight:400;
+                    }
+                  }
+
+                }
+
+              }
+
+              .pixel-promotion-item-two-wrapper{
+                width:49%;
+                height:100%;
+                margin-left:1%;
+                float:left;
+
+                .pixel-promotion-item-two-image{
+                  width:664px;
+                  height:397px;
+
+                  img{
+                    width:100%;
+                    height:100%;
+                  }
+
+                }
+
+                .pixel-promotion-item-two-text{
+                  width:100%;
+                  height:100px;
+
+                  .pixel-promotion-item-two-title{
+                    width:100%;
+                    height:33px;
+                    font-size:16px;
+                    text-align:center;
+                    font-weight:bold;
+                    padding-top:37px;
+                  }
+
+                  .pixel-promotion-item-two-link{
+                    width:100%;
+                    height:auto;
+                    text-align:center;
+
+                    a{
+                      font-weight:400;
+                    }
+                  }
+
+                }
+
+              }
+
+
+            }
+
+          }
+
+        }
+
+
+
       }
 
       &:nth-child(3){
@@ -2693,6 +2853,191 @@ Banners
         width:100%;
         height:auto;
         margin: 0 auto;
+
+        .span16{
+
+
+          .ty-wysiwyg-content{
+
+            .pixel-new-products-title-wrapper{
+              width:100%;
+              height:65px;
+
+              .pixel-new-products-title{
+                width:auto;
+                height:100%;
+                float:left;
+                font-size:25px;
+                font-weight:bold;
+              }
+
+              .pixel-new-products-view-all{
+                width: 221px;
+                height: 40px;
+                border: 2px solid #0070c9;
+                border-radius: 30px;
+                font-size: 13px;
+                text-transform: uppercase;
+                font-weight: bold;
+                display: table;
+                text-align: center;
+                cursor: pointer;
+                float: right;
+
+                span{
+                  display: table-cell;
+                  vertical-align: middle;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+
+      }
+
+      &:nth-child(4), &:nth-child(5){
+        max-width:1366px;
+        width:100%;
+        height:auto;
+        margin: 0 auto;
+
+        .span16{
+          width:100%;
+          height:615px;
+          overflow:hidden;
+
+          .pixel-product-list-wrapper{
+            width:calc(~"350px * 12");
+            height:100%;
+
+            .ty-product-list{
+              width:320px;
+              height:400px;
+              float:left;
+              margin-right:29px;
+
+              &:nth-child(last){
+                margin-right:0;
+              }
+
+              form{
+                width:100%;
+                height:100%;
+
+                .pixel-new-products-wishlist{
+                  width:100%;
+                  height:auto;
+                  margin-bottom:10px;
+                  float:left;
+
+                  img{
+                    float:right;
+                  }
+
+                }
+
+                .ty-product-list__image{
+                  width:100%;
+                  height:300px;
+                  margin:0;
+                  border:none;
+                  float:left;
+                  position:static;
+
+                  .image-reload{
+                    width:100%;
+                    height:100%;
+                    position:relative;
+                    float:left;
+
+                    a{
+                      width:100%;
+                      height:100%;
+                      float:left;
+
+                      .cm-image{
+                        width:100%;
+                        height:auto;
+                        max-height:100%;
+                      }
+
+                      .ty-discount-label{
+                        background:#0070c9;
+                      }
+
+                    }
+
+                  }
+
+                }
+
+                .ty-product-list__content{
+                  width:100%;
+                  height:auto;
+                  float:left;
+
+                  .ty-product-list__info{
+                    width:100%;
+                    height:auto;
+                    float:left;
+
+                    .ty-product-list__item-name{
+                      width:100%;
+                      height:25px;
+                      float:left;
+                      overflow:hidden;
+                      text-overflow: ellipsis;
+
+                      a{
+                        color:black;
+                      }
+
+                    }
+
+                    .ty-product-list__price{
+                      width:100%;
+                      height:auto;
+                      float:left;
+
+                      span{
+                        width:auto;
+                      }
+
+                      .pixel-rating-stars{
+                        width:auto;
+                        float:right;
+
+                        img{
+                          width:94px;
+                          height:auto;
+                        }
+                      }
+                    }
+
+                  }
+                }
+
+              }
+
+
+            }
+
+            hr{
+              display:none;
+            }
+
+          }
+
+
+
+
+        }
+
       }
 
       &:nth-child(4){
@@ -2756,7 +3101,8 @@ Banners
                 .pixel-help-links-wrapper{
                   width:auto;
                   height:100%;
-                  float:right;
+                  float:left;
+                  margin-left:50px;
 
                   .pixel-help-links-image{
                     width:68px;
@@ -2817,15 +3163,15 @@ Banners
               .ty-wysiwyg-content{
 
                 .pixel-footer-item-wrapper{
-                  width:80%;
+                  width:90%;
                   height:100%;
-                  padding:0 10%;
+                  padding-right: 10%;
                   text-align:left;
 
                   .pixel-footer-item-title{
                     width:100%;
                     height:auto;
-                    font-size:16px;
+                    font-size:14px;
                     font-weight:bold;
                     margin-bottom:20px;
 
@@ -2839,10 +3185,11 @@ Banners
 
                     .pixel-footer-item-row{
                       margin-bottom:15px;
-                      font-size:13px;
+
 
                       a{
                         color:black;
+                        font-size:11px;
                       }
 
                     }
