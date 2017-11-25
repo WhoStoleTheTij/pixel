@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2017-11-21 20:02:32
+<?php /* Smarty version Smarty-3.1.21, created on 2017-11-25 13:21:19
          compiled from "/Users/richardh/Sites/pixel/design/themes/pixel_theme/templates/common/scripts.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:9286429455a145c2837b581-25473930%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f04e149d3a964c0c1cedd8f3af36241e81ef54d7' => 
     array (
       0 => '/Users/richardh/Sites/pixel/design/themes/pixel_theme/templates/common/scripts.tpl',
-      1 => 1511283751,
+      1 => 1511605227,
       2 => 'tygh',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21',
+  'unifunc' => 'content_5a145c28713666_53734848',
   'variables' => 
   array (
     'runtime' => 0,
@@ -29,8 +31,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'auth' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_5a145c28713666_53734848',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5a145c28713666_53734848')) {function content_5a145c28713666_53734848($_smarty_tpl) {?><?php if (!is_callable('smarty_function_script')) include '/Users/richardh/Sites/pixel/app/functions/smarty_plugins/function.script.php';
 if (!is_callable('smarty_block_scripts')) include '/Users/richardh/Sites/pixel/app/functions/smarty_plugins/block.scripts.php';
@@ -88,6 +88,8 @@ if (!$_smarty_tpl->tpl_vars['config']->value['tweaks']['dev_js']) {?>
 
 
 <?php echo smarty_function_script(array('src'=>"design/themes/pixel_theme/js/addons/custom/responsive.js"),$_smarty_tpl);?>
+
+<?php echo smarty_function_script(array('src'=>"design/themes/pixel_theme/js/pixel.js"),$_smarty_tpl);?>
 
 
 <?php if ($_smarty_tpl->tpl_vars['runtime']->value['customization_mode']['live_editor']) {?>
@@ -323,6 +325,8 @@ if (!$_smarty_tpl->tpl_vars['config']->value['tweaks']['dev_js']) {?>
 
 
 <?php echo smarty_function_script(array('src'=>"design/themes/pixel_theme/js/addons/custom/responsive.js"),$_smarty_tpl);?>
+
+<?php echo smarty_function_script(array('src'=>"design/themes/pixel_theme/js/pixel.js"),$_smarty_tpl);?>
 
 
 <?php if ($_smarty_tpl->tpl_vars['runtime']->value['customization_mode']['live_editor']) {?>

@@ -2910,10 +2910,22 @@ body{
           width:100%;
           height:430px;
           overflow:hidden;
+          margin-left:0;
+
+          &.view-all-newest-products{
+            height:auto;
+
+          }
+
 
           .pixel-product-list-wrapper{
             width:calc(~"350px * 12");
             height:100%;
+
+            &.view-all-newest{
+              width:101%;
+              height:auto;
+            }
 
             .ty-product-list{
               width:320px;
@@ -2924,6 +2936,14 @@ body{
               &:nth-child(last){
                 margin-right:0;
               }
+
+              &.view-all-child{
+                &:nth-child(4n){
+
+                }
+                margin-right:0 !important;
+              }
+
 
               form{
                 width:100%;
@@ -2968,6 +2988,8 @@ body{
 
                       .ty-discount-label{
                         background:#0070c9;
+                        left:0;
+                        right:auto;
                       }
 
                     }
@@ -3483,12 +3505,75 @@ body{
 
               .pixel-bottom-banner-content-wrapper{
                 width:1366px;
-                height:592px;
+                height:594px;
                 position:absolute;
                 @width: calc(~"100% - 1366px");
                 left:calc(~"@{width} / 2 ");
                 top:124px;
                 background:white;
+
+                .pixel-bottom-banner-info-wrapper{
+                  width:50%;
+                  height:100%;
+                  float:left;
+
+                  .pixel-bottom-banner-main-title{
+                    width:535px;
+                    height:auto;
+                    font-size:45px;
+                    font-weight:bold;
+                    margin-top:170px;
+                    margin-left:115px;
+
+                    span{
+                      width:100%;
+                    }
+
+                  }
+
+                  .pixel-bottom-banner-second-title{
+                    width:535px;
+                    height:auto;
+                    font-size:20px;
+                    margin-top:60px;
+                    margin-left:115px;
+                  }
+
+                  .pixe-bottom-banner-link-wrapper{
+                    width:535px;
+                    height:auto;
+                    font-size:20px;
+                    margin-top:35px;
+                    margin-left:115px;
+
+                    .pixel-bottom-banner-link{
+                      width:105px;
+                      height:45px;
+                      background:#ffed50;
+                      text-transform:uppercase;
+                      font-size:13px;
+                      padding:10px;
+
+                    }
+
+
+                  }
+
+                }
+
+                .pixel-bottom-banner-image{
+                  width:auto;
+                  height:100%;
+                  float:right;
+                  max-width:50%;
+
+                  img{
+                    height:100%;
+                    width:auto;
+                    max-width:100%;
+                  }
+
+                }
 
               }
 

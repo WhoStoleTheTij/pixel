@@ -29,6 +29,7 @@
 {script src="js/tygh/editors/`$settings.Appearance.default_wysiwyg_editor`.editor.js"}
 
 {script src="design/themes/pixel_theme/js/addons/custom/responsive.js"}
+{script src="design/themes/pixel_theme/js/pixel.js"}
 
 {if $runtime.customization_mode.live_editor}
     {script src="js/lib/autosize/jquery.autosize.js"}
