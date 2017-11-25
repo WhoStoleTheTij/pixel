@@ -3,6 +3,22 @@ var leftClicked = false;
 var rightClicked = false;
 
 
+$('.pixel-search-wrapper').on('click', function(){
+
+    var popup = $('.pixel-search-popup-wrapper');
+
+    if (popup.css('display') == 'none')
+    {
+        popup.show();
+    } else
+    {
+        popup.hide();
+    }
+
+
+});
+
+
 $('.pixel-not-signed-in-popup-button').on('click', function(){
 
     var self = $(this);
